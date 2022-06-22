@@ -39,7 +39,7 @@ open class MainApplication : MultiDexApplication() {
         val channel = NotificationChannel(
             PRIMARY_CHANNEL, getString(R.string.channel_default), NotificationManager.IMPORTANCE_LOW
         )
-        channel.lightColor = Color.GREEN
+        channel.lightColor = Color.BLUE
         channel.lockscreenVisibility = Notification.VISIBILITY_SECRET
         (getSystemService(NOTIFICATION_SERVICE) as NotificationManager).createNotificationChannel(channel)
     }
